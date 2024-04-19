@@ -57,9 +57,11 @@ export default function Main() {
       >
         <ExpenseView
           data={allTransactions.filter((item) => item.type === "expense")}
+          type={"expense"}
         />
         <ExpenseView
-          data={allTransactions.filter((item) => item.type === "expense")}
+          data={allTransactions.filter((item) => item.type === "income")}
+          type={"income"}
         />
       </Flex>
     </Flex>
